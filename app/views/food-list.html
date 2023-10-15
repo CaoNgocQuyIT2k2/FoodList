@@ -143,7 +143,11 @@
                   >Show</label
                 >
                 <div class="col-sm-10">
-                  <select class="custom-select" id="selLoai">
+                  <select
+                    class="custom-select"
+                    id="selLoai"
+                    onchange="filterProducts()"
+                  >
                     <option selected>Chọn loại</option>
                     <option value="all">Tất cả</option>
                     <option value="loai1">Chay</option>
@@ -311,7 +315,12 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-warning" id="btnCapNhat">
+            <button
+              type="button"
+              class="btn btn-warning"
+              id="btnCapNhat"
+              onclick="updateFood()"
+            >
               Cập Nhật
             </button>
             <button
@@ -337,7 +346,6 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    
     <!-- my js -->
     <script type="module" src="../controllers/v2/main-v2.js"></script>
   </body>

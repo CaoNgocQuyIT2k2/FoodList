@@ -12,10 +12,13 @@ export let renderFoodList = (foodArr) => {
                         <td>${tinhTrang}</td>
                         <td>
                         <button onclick=deleteFood(${ma})
-                         class="btn btn-danger">Xoá</button></td>
+                         class="btn btn-danger">Xoá</button>
+                        <button onclick=editFood(${ma})
+                         class="btn btn-primary" data-toggle="modal"
+                         data-target="#exampleModal">Sửa</button></td>
                     </tr> `;
     contentHTLM = contentHTLM + trString;
   });
-  
+
   document.getElementById("tbodyFood").innerHTML = contentHTLM;
 };
